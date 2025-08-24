@@ -1,8 +1,10 @@
 # ClimbCoach — Real‑time Computer Vision Coach for Climbing
 
-ClimbCoach uses **MediaPipe Pose** + **hold detection** + **stability‑aware planning (A*/beam)** to give **live beta**:
+ClimbCoach uses **MediaPipe Pose** + **hold detection** + **stability‑aware planning (A*/beam)** + **AI** to give **live beta**:
 - which limb to move, to which hold,
 - with an **AR overlay**, **top‑k suggestions**, **voice coach**, and **auto‑grade estimation**.
+- Summary heatmap of moves performed
+- All with an AI coach assistant
 It logs sessions and produces **heatmaps + timelines + a PDF report** for your portfolio.
 
 ## Quick start (Docker Compose)
