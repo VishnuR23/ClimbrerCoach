@@ -1,4 +1,4 @@
-# ClimbCoach — Real‑time Computer Vision Coach for Climbing
+# ClimbrerCoach — Real‑time Computer Vision Coach for Climbing
 
 ClimbCoach uses **MediaPipe Pose** + **hold detection** + **stability‑aware planning (A*/beam)** + **AI** to give **live beta**:
 - which limb to move, to which hold,
