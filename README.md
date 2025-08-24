@@ -5,6 +5,8 @@ ClimbCoach uses **MediaPipe Pose** + **hold detection** + **stability‑aware pl
 - with an **AR overlay**, **top‑k suggestions**, **voice coach**, and **auto‑grade estimation**.
 - Summary heatmap of moves performed
 - All with an AI coach assistant
+
+  
 It logs sessions and produces **heatmaps + timelines + a PDF report** for your portfolio.
 
 ## Quick start (Docker Compose)
