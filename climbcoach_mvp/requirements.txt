@@ -1,0 +1,8 @@
+opencv-python
+mediapipe
+numpy
+PyYAML
+shapely
+matplotlib
+pyttsx3
+websockets

@@ -1,0 +1,4 @@
+wall:
+  width_m: 4.0
+  height_m: 4.5
+  H: null  # set by scripts/set_homography.py

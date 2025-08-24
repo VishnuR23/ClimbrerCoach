@@ -1,0 +1,26 @@
+
+<svg xmlns="http://www.w3.org/2000/svg" width="980" height="360">
+  <defs>
+    <style>
+      .box{fill:#f6f9fc;stroke:#1f2937;stroke-width:2;rx:10}
+      .arrow{stroke:#1f2937;stroke-width:2;marker-end:url(#m)}
+      .label{font-family:Arial,sans-serif;font-size:14px;fill:#111827}
+      .title{font-family:Arial Black,Arial,sans-serif;font-size:18px;fill:#111827}
+    </style>
+    <marker id="m" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L9,3 z" fill="#1f2937" />
+    </marker>
+  </defs>
+  <text x="20" y="28" class="title">ClimbCoach — Video ➜ Perception ➜ Planning ➜ Coaching ➜ Logs</text>
+  <rect class="box" x="20" y="60" width="140" height="90"/><text class="label" x="30" y="90">Video Input</text><text class="label" x="30" y="112">Webcam / File</text>
+  <rect class="box" x="190" y="60" width="190" height="90"/><text class="label" x="200" y="88">Perception</text><text class="label" x="200" y="110">MediaPipe Pose • Hold Seg</text><text class="label" x="200" y="132">Homography (px→m)</text>
+  <rect class="box" x="410" y="60" width="190" height="90"/><text class="label" x="420" y="88">State</text><text class="label" x="420" y="110">Contacts (LH/RH/LF/RF)</text><text class="label" x="420" y="132">Anthro, COM</text>
+  <rect class="box" x="630" y="60" width="190" height="90"/><text class="label" x="640" y="88">Planner</text><text class="label" x="640" y="110">Greedy • A* • Beam</text><text class="label" x="640" y="132">Stability/Reach Costs</text>
+  <rect class="box" x="850" y="60" width="110" height="90"/><text class="label" x="860" y="88">Coach</text><text class="label" x="860" y="110">Overlay • TTS</text>
+  <rect class="box" x="410" y="190" width="190" height="90"/><text class="label" x="420" y="218">Replay</text><text class="label" x="420" y="240">Heatmaps • Report</text>
+  <line class="arrow" x1="160" y1="105" x2="190" y2="105"/>
+  <line class="arrow" x1="380" y1="105" x2="410" y2="105"/>
+  <line class="arrow" x1="600" y1="105" x2="630" y2="105"/>
+  <line class="arrow" x1="820" y1="105" x2="850" y2="105"/>
+  <line class="arrow" x1="700" y1="150" x2="505" y2="190"/>
+</svg>

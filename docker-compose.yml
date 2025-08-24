@@ -1,0 +1,27 @@
+version: "3.9"
+
+services:
+  coach_api:
+    build: ./ai_coach_server
+    ports:
+      - "8000:8000"
+    volumes:
+      - coach_audio:/app/static/audio
+
+  climbcoach_demo:
+    build: ./climbcoach_mvp
+    depends_on:
+      - coach_api
+    environment:
+      - PYTHONUNBUFFERED=1
+    volumes:
+      - ./climbcoach_mvp/runs:/app/runs
+      - ./climbcoach_mvp/config:/app/config
+      - ./climbcoach_mvp/data:/app/data
+    command: >
+      sh -c "python src/app.py --source data/sample/route.mp4 --detector hsv --planner beam
+      --h_min 30 --h_max 90 --s_min 60 --s_max 255 --v_min 60 --v_max 255 --topk 3
+      --ai_coach ws --ws_url ws://coach_api:8000/ws --log_session || true"
+
+volumes:
+  coach_audio:
